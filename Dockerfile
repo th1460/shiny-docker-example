@@ -21,7 +21,9 @@ RUN wget --no-verbose https://s3.amazonaws.com/rstudio-shiny-server-os-build/ubu
     rm -f version.txt ss-latest.deb
 
 # Install R packages that are required
-RUN R -e "install.packages(c('shiny', 'shinydashboard'), repos='http://cran.rstudio.com/')"
+RUN R -e "install.packages('remotes', repos='http://cran.rstudio.com/')"
+RUN R -e "remotes::install_version('shiny', '1.5.0')"
+RUN R -e "remotes::install_version('shinydashboard', '0.7.1')"
 # RUN R -e "remotes::install_github()"
 
 # Copy configuration files into the Docker image
