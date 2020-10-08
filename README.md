@@ -1,4 +1,6 @@
-# A example with shiny and docker
+# A Shiny example
+
+## Docker
 
 ```
 # build
