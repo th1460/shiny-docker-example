@@ -4,8 +4,8 @@
 
 ```
 # build
-docker build -t shiny-docker-example .
+docker build -t shiny-example .
 
 # run
-docker run -p 80:80 shiny-docker-example
+docker run -p 80:80 shiny-example
 ```

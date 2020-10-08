@@ -28,7 +28,7 @@ RUN R -e "remotes::install_version('shinydashboard', '0.7.1')"
 
 # Copy configuration files into the Docker image
 COPY shiny-server.conf  /etc/shiny-server/shiny-server.conf
-COPY /app /srv/shiny-server/
+COPY app.R /srv/shiny-server/
 
 # Make the ShinyApp available at port 80
 EXPOSE 80
