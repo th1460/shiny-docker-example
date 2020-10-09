@@ -1,0 +1,6 @@
+---
+packages:
+  - cran_mirror: https://cran.r-project.org
+    num_threads: 2
+    packages:
+      - name: shinydashboard
