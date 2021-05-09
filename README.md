@@ -54,6 +54,12 @@ ibmcloud cf apps
 ibmcloud cf logs shiny-example --recent
 ```
 
+### Use Github Actions
+
+Here a configuration to use Github Action to CI/CD:
+
+https://github.com/marketplace/actions/deploy-to-ibm-cloud-foundry
+
 ### Deploying an App with Docker in Cloud Foundry
 
 ```
