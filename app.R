@@ -2,7 +2,7 @@ library(shiny)
 library(shinydashboard)
 
 ui <- dashboardPage(
-    dashboardHeader(title = "Hello World!"),
+    dashboardHeader(title = "Hello World!!"),
     dashboardSidebar(),
     dashboardBody(
         textOutput("text")
