@@ -2,15 +2,11 @@ library(shiny)
 library(shinydashboard)
 
 ui <- dashboardPage(
-    dashboardHeader(title = "Hello World!!"),
+    dashboardHeader(title = "Hello World!"),
     dashboardSidebar(),
-    dashboardBody(
-        textOutput("text")
-    )
+    dashboardBody()
 )
 
-server <- function(input, output) {
-    output$text <- renderText(Sys.getenv("TESTE1"))
-}
+server <- function(input, output) {}
 
 shinyApp(ui, server)
